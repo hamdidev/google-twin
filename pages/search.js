@@ -5,7 +5,7 @@ import SearchHeader from "../components/SearchHeader";
 import { SearchResults } from "../components/SearchResults";
 import Response from "../Response";
 
-const search = ({ results }) => {
+const Search = ({ results }) => {
   const router = useRouter();
   return (
     <>
@@ -26,7 +26,7 @@ const search = ({ results }) => {
   );
 };
 
-export default search;
+export default Search;
 
 export async function getServerSideProps(context) {
   const startIndex = context.query.start || "1";
